@@ -1,6 +1,5 @@
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
-
 import pandas as pd
 
 app = Dash(__name__)
@@ -81,4 +80,4 @@ def update_graph(xaxis_column_name, yaxis_column_name,
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
