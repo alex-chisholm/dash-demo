@@ -9,6 +9,11 @@ my_secret = os.getenv('MY_SECRET')
 print(my_secret)
 
 
+variable_value = os.environ.get('MY_SECRET')
+print(my_secret)
+
+
+
 app = Dash(__name__)
 
 df = pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
