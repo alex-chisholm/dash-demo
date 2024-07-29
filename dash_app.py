@@ -1,6 +1,10 @@
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
+import os
+
+print(f"My secret is {os.getenv('MY_SECRET')}")
+
 
 app = Dash(__name__)
 
