@@ -5,6 +5,9 @@ import os
 
 print(f"My secret is {os.getenv('MY_SECRET')}")
 
+my_secret = os.getenv('MY_SECRET')
+print(my_secret)
+
 
 app = Dash(__name__)
 
